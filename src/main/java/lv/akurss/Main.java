@@ -22,6 +22,7 @@ public class Main {
             .map(it -> it.getDescription())
             .forEach(it -> log.info(format(it.getValue())));
 
+        System.out.println("!");
     }
 
     protected static String format(String str){
@@ -30,6 +31,7 @@ public class Main {
         sb.append(StringEscapeUtils.unescapeHtml4(str).replace("<br>", "\n"));
         sb.append("\n====================\n");
         return sb.toString();
+
     }
 
 }
